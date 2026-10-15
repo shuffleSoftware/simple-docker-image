@@ -4,6 +4,7 @@ steps:
     image: woodpeckerci/plugin-docker-buildx
     settings:
       debug: true
+      dry_run: true
       repo: my-image
       tags: ${CI_COMMIT_SHA}
       auto_tag: true
