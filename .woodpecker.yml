@@ -11,8 +11,8 @@ steps:
       build_args:
         - BUILDKIT_INLINE_CACHE=1
   - name: docker
-     image: docker
-     commands:
-+      - echo $DOCKER_USERNAME
-+      - echo $DOCKER_PASSWORD
-+    secrets: [ docker_username, docker_password ]
+    image: docker
+    commands:
++   - echo $DOCKER_USERNAME
++   - echo $DOCKER_PASSWORD
++   secrets: [ docker_username, docker_password ]
