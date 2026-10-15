@@ -15,4 +15,10 @@ steps:
     commands:
     - echo $DOCKER_USERNAME
     - echo $DOCKER_PASSWORD
-+   secrets: [ docker_username, docker_password ]
+#    secrets: [ docker_username, docker_password ]
+    environment:
+      DOCKER_USERNAME:
+        from_secret: docker_username
+      DOCKER_PASSWORD:
+        from_secret: docker_password
+   
