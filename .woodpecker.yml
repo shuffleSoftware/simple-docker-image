@@ -1,4 +1,3 @@
-privileged: true
 
 steps:
   - name: build-and-test
