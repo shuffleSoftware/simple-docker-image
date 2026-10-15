@@ -10,5 +10,3 @@ steps:
       auto_tag: true
       build_args:
         - BUILDKIT_INLINE_CACHE=1
-  - name: test
-    run: echo "hello world"
