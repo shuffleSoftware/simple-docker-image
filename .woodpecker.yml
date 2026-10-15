@@ -2,7 +2,6 @@
 steps:
   - name: build-and-test
     image: woodpeckerci/plugin-docker-buildx
-    privileged: true
     settings:
       debug: true
       repo: my-image
