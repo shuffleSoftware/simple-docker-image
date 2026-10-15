@@ -2,8 +2,8 @@
 steps:
   - name: build-and-test
     image: woodpeckerci/plugin-docker-buildx
+    privileged: true
     settings:
-      privileged: true
       debug: true
       repo: my-image
       tags: ${CI_COMMIT_SHA}
